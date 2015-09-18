@@ -1,0 +1,98 @@
+<html>
+
+<head>
+
+    <head>
+        <title>
+            Restaurant Picker
+        </title>
+        <link href="http://getbootstrap.com/dist/css/bootstrap.min.css" rel="stylesheet">
+        <link href="http://getbootstrap.com/examples/grid/grid.css" rel="stylesheet">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    </head>
+</head>
+
+<body>
+    <nav class="navbar navbar-default navbar-static-top">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-8" aria-expanded="false">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="mailto:contact@bunnyandporkbelly.com">Email Us</a>
+            </div>
+        </div>
+    </nav>
+    <div class="container">
+        <div class="page-header">
+            <h1>Resturant Picker</h1>
+            <p class="lead"> Featuring restaurants and reviews from <a href="http://www.bunnyandporkbelly.com/">BunnyandPorkBelly.com  <img src="http://www.bunnyandporkbelly.com/wp-content/uploads/2015/08/logo5.jpg" height="62" width="62"></a></p>
+        </div>
+        <h3></h3>
+        <p> </p>
+        <br>
+        <form>
+            <div class="row" style="text-align: center">
+                <div class="col-md-4">
+                    <select id="loc">
+                        <option value="">Location</option>
+                        <option value="Boston">Boston</option>
+                        <option value="Los Angeles">Los Angeles</option>
+                    </select>
+                </div>
+                <div class="col-md-4">
+                    <select id="category">
+                        <option value="">Category</option>
+                        <option value="American">American</option>
+                        <option value="Chinese">Chinese</option>
+                        <option value="French">French</option>
+                        <option value="Korean">Korean</option>
+                        <option value="Mexican">Mexican</option>
+                    </select>
+                </div>
+                <div class="col-md-4">
+                    <select id="price">
+                        <option value="">Price</option>
+                        <option value="one">$</option>
+                        <option value="two">$$</option>
+                        <option value="three">$$$</option>
+                    </select>
+                </div>
+            </div>
+            <center>
+                <button type="button" onclick="myFunction()">
+                    Show Me <span class="glyphicon glyphicon-hand-right" aria-hidden="true"></span>
+                    <span class="glyphicon glyphicon-hand-right" aria-hidden="true"></span>
+                    <span class="glyphicon glyphicon-hand-right" aria-hidden="true"></span></button>
+            </center>
+        </form>
+        <br>
+        <h3 id="how"></h3>
+        <div class="row" style="text-align: center">
+            <p class="text-warning" id="name"></p>
+            <p class="text-warning" id="location"></p>
+            <a href="" target="_blank" id = "linkto" class="popup">
+                <p class="text-warning" id="cate"></p>
+            </a>
+            <img id="image1" src="">
+            <p class="text-warning" id="pic"></p>
+            </img>
+        </div>
+        <br>
+        <br>
+        <hr>
+        <footer>
+            <div class="col-md-offset-1 col-md-8">&copy; Restaurant Picker 2015</div>
+        </footer>
+        <!-- footer -->
+        <br>
+        <br>
+    </div>
+    <script type="text/javascript" src="restaurants.js">
+    </script>
+</body>
+
+</html>
